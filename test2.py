@@ -9,6 +9,8 @@ import time  # For generating unique index names
 import json
 import re
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
 # Initialize Qwen2-VL model and processor
 @st.cache_resource
 def load_models():
@@ -19,7 +21,7 @@ def load_models():
         "Qwen/Qwen2-VL-7B-Instruct",
         trust_remote_code=True,
         torch_dtype=torch.bfloat16
-    ).to('cpu').eval()
+    ).to(device).eval()
 
     processor = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-7B-Instruct", trust_remote_code=True)
 
@@ -94,7 +96,7 @@ if uploaded_file is not None:
             return_tensors="pt",
         )
 
-        inputs = inputs.to("cpu")
+        inputs = inputs.to(device)
 
         # Generate text output from the image using Qwen2-VL
         st.write("Generating text...")
