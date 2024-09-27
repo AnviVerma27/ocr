@@ -139,4 +139,4 @@ if st.session_state.extracted_text:
         st.subheader("Search Results:")
         if result == '':
             st.markdown('Not forund')
-        st.markdown(highlighted_text)
+        st.markdown(result)
