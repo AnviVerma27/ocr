@@ -1,0 +1,5 @@
+pdf2image
+byaldi
+transformers
+qwen_vl_utils
+torch
