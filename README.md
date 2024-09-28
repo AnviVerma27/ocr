@@ -2,6 +2,33 @@
 
 This project is a web-based application that allows users to upload documents (in PDF or image formats), extract text from them using Optical Character Recognition (OCR), and perform keyword searches within the extracted text. The application leverages state-of-the-art AI models for text extraction and supports multilingual document processing, specifically handling both English and Hindi text. Additionally, it provides a search functionality that highlights occurrences of user-specified keywords in the extracted content.
 
+## **Setup Instructions**
+
+### **1. Prerequisites**
+   - **Python 3.8+**: Make sure you have Python installed on your system.
+   - **CUDA** (Optional): For GPU support, ensure CUDA is installed and available.
+   - **Streamlit**: To install Streamlit for running the web application.
+
+### **2. Installation Steps**
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/ocr-search-app.git
+   cd ocr-search-app
+2. **Install Dependencies: Create and activate a virtual environment (optional but recommended)**:
+   ```bash
+    python -m venv venv
+    source venv/bin/activate   # For Linux/MacOS
+    venv\Scripts\activate      # For Windows
+    pip install -r requirements.txt
+3. **Run the application**:
+   ```bash
+   streamlit run test2.py
+
+## **Deployment on Hugging Face Spaces**
+
+This application is deployed on [Hugging Face Spaces](https://huggingface.co/spaces/anvi27/ocr) using Streamlit. You can interact with the application directly in your browser without needing to install any dependencies or set up a local environment.
+
 ## **Features**
 
 1. **Upload PDF or Image Documents**: Users can upload document in image formats (JPG, PNG, JPEG).
@@ -47,30 +74,3 @@ This project is a web-based application that allows users to upload documents (i
    - If the keyword is found in a line, the entire line is returned with the keyword highlighted.
    - If no matches are found, a message is displayed indicating that the keyword was not found.
 
-## **Deployment on Hugging Face Spaces**
-
-This application is deployed on [Hugging Face Spaces](https://huggingface.co/spaces/anvi27/ocr) using Streamlit. You can interact with the application directly in your browser without needing to install any dependencies or set up a local environment.
-
-
-## **Setup Instructions**
-
-### **1. Prerequisites**
-   - **Python 3.8+**: Make sure you have Python installed on your system.
-   - **CUDA** (Optional): For GPU support, ensure CUDA is installed and available.
-   - **Streamlit**: To install Streamlit for running the web application.
-
-### **2. Installation Steps**
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/ocr-search-app.git
-   cd ocr-search-app
-2. **Install Dependencies: Create and activate a virtual environment (optional but recommended)**:
-   ```bash
-    python -m venv venv
-    source venv/bin/activate   # For Linux/MacOS
-    venv\Scripts\activate      # For Windows
-    pip install -r requirements.txt
-3. **Run the application**:
-   ```bash
-   streamlit run test2.py
