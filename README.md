@@ -73,4 +73,4 @@ This application is deployed on [Hugging Face Spaces](https://huggingface.co/spa
     pip install -r requirements.txt
 3. **Run the application**:
    ```bash
-   streamlit run app.py
+   streamlit run test2.py
