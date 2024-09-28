@@ -13,7 +13,7 @@ This project is a web-based application that allows users to upload documents (i
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/ocr-search-app.git
+   git clone https://github.com/AnviVerma27/ocr.git
    cd ocr-search-app
 2. **Install Dependencies: Create and activate a virtual environment (optional but recommended)**:
    ```bash
