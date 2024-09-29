@@ -29,6 +29,11 @@ This project is a web-based application that allows users to upload documents (i
 
 This application is deployed on [Hugging Face Spaces](https://huggingface.co/spaces/anvi27/ocr) using Streamlit. You can interact with the application directly in your browser without needing to install any dependencies or set up a local environment.
 
+## **Screenashot of the application**
+
+![IMG-20230731-WA0055](https://github.com/AnviVerma27/ocr/blob/master/Screenshot%202024-09-29%20at%2011.07.56%E2%80%AFAM.png)
+![IMG-20230731-WA0055](https://github.com/AnviVerma27/ocr/blob/master/Screenshot%202024-09-29%20at%2011.08.07%E2%80%AFAM.png)
+
 ## **Features**
 
 1. **Upload PDF or Image Documents**: Users can upload document in image formats (JPG, PNG, JPEG).
